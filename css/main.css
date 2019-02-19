@@ -290,7 +290,9 @@ main {
       height: 30vh;
       width: 80vw; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .menu {
+    opacity: 1; } }
 
 @media screen and (max-width: 500px) {
   main {
