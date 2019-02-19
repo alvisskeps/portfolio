@@ -56,11 +56,17 @@
     grid-template-areas:
       "bioimage"
       "bio"
-      "job1"
-      "job2"
-      "job3";
+      "about-heading"
+      "job1";
 
     grid-template-columns: 1fr;
+    .job-1 {
+      grid-area: job1;
+      position: relative;
+      margin: auto;
+      height: 30vh;
+      width: 80vw;
+    }
   }
 
   .projects {
