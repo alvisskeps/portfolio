@@ -31,3 +31,36 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+// Pie Chart
+let myChart = document.getElementById("myChart").getContext("2d");
+
+Chart.defaults.global.defaultFontColor = "#fff";
+Chart.defaults.global.defaultFontSize = 15;
+
+let codeChart = new Chart(myChart, {
+  type: "pie",
+  maintainAspectRatio: false,
+  data: {
+    labels: ["Java", "PHP", "CSS", "HTML", "JS"],
+
+    datasets: [
+      {
+        label: "Coding Skill",
+        data: [20, 10, 30, 30, 10],
+        backgroundColor: [
+          "rgba(207, 0, 15, 1)",
+          "rgba(115, 101, 152, 1)",
+          "rgba(52, 152, 219, 1)",
+          "rgba(249, 105, 14, 1)",
+          "rgba(254, 241, 96, 1)"
+        ],
+        borderWidth: 1,
+        borderColor: "#efdd15",
+        hoverBorderWidth: 3,
+        hoverBorderColor: "#efdd15"
+      }
+    ]
+  },
+  options: {}
+});
